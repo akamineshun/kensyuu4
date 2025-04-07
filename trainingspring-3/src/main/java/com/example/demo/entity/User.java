@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import jakarta.persistence.Column;
@@ -11,10 +12,13 @@ import jakarta.persistence.Table;
 
 import lombok.Data;
 
+/**
+ * ユーザー情報 Entity
+ */
 @Entity
 @Data
 @Table(name = "user")
-public class User {
+public class User implements Serializable{
 
 	/**
 	 * ID

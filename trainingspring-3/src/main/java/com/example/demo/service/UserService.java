@@ -20,6 +20,10 @@ public class UserService {
 	@Autowired
 	UserRepository userRepository;
 	
+	/**
+	 * ユーザー情報 全検索
+	 * @return　検索結果
+	 */
 	public List<User> searchAll() {
 		// ユーザーTBLの内容を全検索
 		return userRepository.findAll();
