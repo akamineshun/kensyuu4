@@ -28,4 +28,12 @@ public class UserService {
 		// ユーザーTBLの内容を全検索
 		return userRepository.findAll();
 	}
+	
+	/**
+	 * ユーザー情報 主キー検索
+	 * @return 検索結果
+	 */
+	public User findById(Long id) {
+		return userRepository.findById(id).get();
+	}
 }
